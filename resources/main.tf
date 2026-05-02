@@ -9,5 +9,5 @@ resource "aws_instance" "vm_creation" {
 
 resource "aws_vpc_security_group_ingress_rule" "allow-firewall-rule" {
   security_group_id = "sg-0fcfe62979bdd0bf1"  # quotes were missing
-
+  ip_protocol       = "tcp"
 }
